@@ -1,0 +1,718 @@
+body{
+  font-family: arial;
+  border: solid lightgray 1px;
+  border-radius: 1em;
+  position: absolute;
+  padding-bottom: 15em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: dashed lightgray 1px;
+}
+
+.returnButton {
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+  width: 15%;
+  color: white;
+  padding: .8em;
+  background-color: #497dd1;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.analytics {
+  height: 1em;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+
+
+
+
+
+
+
+
+.dateSelector{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: .5em;
+  padding: .5em;
+}
+
+.week{
+  display: flex;
+  background-color: lightgray;
+  padding:.5em;
+  border-radius: .5em;
+  width: 8%;
+  border: 1em;
+  justify-content: center;
+}
+
+.month {
+  display: flex;
+  background-color: gray;
+  border-radius: .5em;
+  padding: .5em;
+  border: 1em;
+  width: 8%;
+  justify-content: center;
+  color: white;
+}
+
+.dropDownDate{
+  display: flex;
+  background-color: white;
+}
+
+
+
+
+
+
+.statistics {
+  display: flex;
+  border: 1px solid lightblue;
+  height: 20em;
+  background-image: url(dailyviewerminutes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dailyViews {
+  display: flex;
+  background-color: #dae1ed;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.chart {
+  display:flex;
+  height: 20em;
+  justify-content: center;
+}
+
+.viewChart{
+  height:20em;
+  width: 100%;
+}
+
+
+
+
+
+
+.overview{
+  display: flex;
+  height: 2em;
+  font-size: 1.3em;
+  align-items: flex-start;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  margin-left: 1em;
+  border: .5em;
+}
+
+
+.percentageGrowth{
+  display: flex;
+  align-self: center;
+  align-content: center;
+  border: 1px solid lightblue;
+  margin-left: 3em;
+  margin-right: 3em;
+  height: 5em;
+  padding: 0;
+}
+
+
+
+/* Viewer minutes */
+.totalViewerMinutes {
+  display: flex;
+  border: 1px solid lightblue;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.totalViewerMinuteTitle {
+  display: flex;
+  font-size: .5em;
+  align-content: center;
+}
+
+.viewerMinute {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  position: absolute;
+}
+
+.viewerMinutesUntilNow {
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow {
+  display:flex;
+  flex-direction: row;
+  height: .8em;
+  width: .8em;
+}
+
+.twentyFivePercent {
+  display: flex;
+  font-size: .7em;
+  color: green;
+}
+
+/* Stream */
+.streams {
+  display: flex;
+  border: 1px solid lightblue;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.totalStreams {
+  display: flex;
+  font-size: .5em;
+  align-content: center;
+}
+
+.streamPercent {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  position: absolute;
+}
+
+.numberOfStreams {
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow {
+  display:flex;
+  flex-direction: row;
+  height: .8em;
+  width: .8em;
+}
+
+.percent2 {
+  display: flex;
+  font-size: .7em;
+  color: green;
+}
+
+
+
+/* Average Time */
+
+.averageTime {
+  display: flex;
+  border: 1px solid lightblue;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.averageTimePerViewer {
+  display: flex;
+  flex-direction: row;
+  font-size: .5em;
+  align-content: center;
+}
+
+.timePerViewer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 2em;
+}
+
+.timeStamp {
+  display: flex;
+  flex-direction: row;
+}
+
+.redarrow {
+  display:flex;
+  flex-direction: row;
+  height: .8em;
+  width: .8em;
+}
+
+.percent3 {
+  display: flex;
+  font-size: .7em;
+  color: red;
+}
+
+
+
+
+
+/* Unique Viewers */
+
+.uniqueViewers {
+  display: flex;
+  border: 1px solid lightblue;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.totalUniqueViewers {
+  display: flex;
+  font-size: .5em;
+  align-content: center;
+}
+
+.uniqueViewerCount {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  position: absolute;
+}
+
+.numberOfUniqueViewers {
+  display: flex;
+  flex-direction: row;
+}
+
+.redarrow {
+  display:flex;
+  flex-direction: row;
+  height: .8em;
+  width: .8em;
+}
+
+.percent4 {
+  display: flex;
+  font-size: .7em;
+  color: red;
+}
+
+
+
+
+
+/* % of new visitors */
+
+.newVisitors {
+  display: flex;
+  border: 1px solid lightblue;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.percentOfNewVisitors {
+  display: flex;
+  font-size: .5em;
+  align-content: center;
+}
+
+.newVisitorTotal {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  position: absolute;
+}
+
+.numberOfNewVisitors {
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow {
+  display:flex;
+  flex-direction: row;
+  height: .8em;
+  width: .8em;
+}
+
+.percent5 {
+  display: flex;
+  font-size: .7em;
+  color: green;
+}
+
+
+
+
+
+/*  Geolocation Heading*/
+
+.geolocationAndFullReport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.geolocation {
+  display:flex;
+  justify-content: flex-start;
+  font-size: 1.3em;
+}
+
+.viewFullReport {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 1em;
+}
+
+
+
+/* Geolocation Chart */
+
+.streamByCountrySection {
+  display: flex;
+  flex-direction: row;
+}
+
+.streambyCountryTitle {
+  display: flex;
+  background-color: lightblue;
+  width: 40em;
+}
+
+.streambyCountryChart {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightblue;
+  padding-top: 0em;
+  margin-left: 2em;
+}
+
+.pieChart {
+  display: flex;
+  height: 10em;
+  justify-content: center;
+  position: absolute;
+}
+
+.geolocationTable {
+  display:flex;
+  height: 19em;
+  margin-right: 2em;
+}
+
+/* Titles */
+.countryTerritoryTitle {
+  background-color: lightblue;
+  width: 60em;
+
+
+}
+
+.streamsTitle {
+  background-color: lightblue;
+}
+
+
+/* Countries Next to chart */
+.unitedStates {
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+.indonesia {
+  display:flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+.india {
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+
+}
+
+.unitedKingdom {
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+.mexico {
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+.spain{
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+.turkey{
+  display: flex;
+  border: 1px solid lightblue;
+  height: 2.15em;
+}
+
+
+
+/* country stream numbers  */
+
+.unitedStatesStreams{
+  border: 1px solid lightblue;
+}
+
+.indonesiaStreams {
+  border: 1px solid lightblue;
+}
+
+.indiaStreams {
+  border: 1px solid lightblue;
+}
+
+.unitedKingdomStreams {
+  border: 1px solid lightblue;
+}
+
+.mexicoStreams {
+  border: 1px solid lightblue;
+}
+
+.spainStreams {
+  border: 1px solid lightblue;
+}
+
+.turkeyStreams {
+  border: 1px solid lightblue;
+}
+
+
+
+
+/* Video Views and Post Views Header*/
+.videoAndPost{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.videoViewsHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+  font-size: .9em;
+  height: 2em;
+  width: 40em;
+}
+
+.videoViewsFullReport {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+
+
+.postViewsHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: .9em;
+  justify-content: space-between;
+  height: 2em;
+  width: 40em;
+  margin:1em;
+}
+
+.postViewsFullReport {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 1em;
+
+}
+
+
+
+/* Video Views Table */
+
+
+.videoTitleTable {
+  display:flex;
+  height: 12em;
+  margin-right: 2em;
+  position: absolute;
+}
+
+.videoTitleTableHeader {
+  display: flex;
+  background-color: lightblue;
+  height: 1.2em;
+  width: 27em;
+  margin: 0;
+  padding: 0;
+}
+
+.viewsTitleTableHeader {
+  background-color: lightblue;
+  width: 10em;
+}
+
+.musicShowreel{
+  border: 1px solid lightblue;
+  height: .5em;
+}
+
+
+.musicViewsNumber {
+  border: 1px solid lightblue;
+}
+
+.livestreamProductionMusicShowreel {
+  border: 1px solid lightblue;
+}
+
+.livestreamProductionMusicShowreelNumber {
+      border: 1px solid lightblue;
+}
+
+.livestreanFacebookPromo {
+    border: 1px solid lightblue;
+}
+
+.livestreanFacebookPromoNumber{
+    border: 1px solid lightblue;
+}
+
+.facebookPromo {
+    border: 1px solid lightblue;
+}
+
+.facebookPromoNumber {
+    border: 1px solid lightblue;
+}
+
+.musicShowreelVideoTableValue {
+    border: 1px solid lightblue;
+}
+
+.musicShowreelVideoTableNumber {
+    border: 1px solid lightblue;
+}
+
+.livestreanFacebookPromo2 {
+    border: 1px solid lightblue;
+}
+
+.livestreanFacebookPromo2Number{
+    border: 1px solid lightblue;
+}
+
+.completeLivestreamShowreel {
+    border: 1px solid lightblue;
+}
+
+.completeLivestreamShowreelNumber {
+    border: 1px solid lightblue;
+}
+
+
+/* post views table */
+
+.postViewsTable {
+  display:flex;
+  height: 11em;
+  margin-right: 2em;
+  position: absolute;
+}
+
+.postTitle{
+  display: flex;
+  background-color: lightblue;
+  height: 1.2em;
+  width: 35em;
+  margin: 0;
+  padding: 0;
+}
+
+.postTitleViews{
+  background-color: lightblue;
+  width: 20em;
+}
+
+.postMusicShowreel {
+  border: 1px solid lightblue;
+}
+
+.postMusicShowreelNumber {
+  border: 1px solid lightblue;
+}
+
+.postLivestreamProductionMusicShowreel {
+  border: 1px solid lightblue;
+}
+
+.postLivestreamProductionMusicShowreelNumber{
+  border: 1px solid lightblue;
+}
+
+.postLivestreamFacebookPromo{
+  border: 1px solid lightblue;
+}
+
+.postLivestreamFacebookPromoNumber{
+  border: 1px solid lightblue;
+}
+
+.postFacebookPromo{
+  border: 1px solid lightblue;
+}
+
+.postFacebookPromoNumber {
+  border: 1px solid lightblue;
+}
+
+.postMusicShowreel2 {
+  border: 1px solid lightblue;
+}
+
+.postMusicShowreelNumber2 {
+  border: 1px solid lightblue;
+}
+
+.postLive{
+  border: 1px solid lightblue;
+}
+
+.postLiveNumber {
+  border: 1px solid lightblue;
+}
+
+.completeLivestreamShowreel2 {
+  border: 1px solid lightblue;
+}
+
+.completeLivestreamShowreelNumber2 {
+  border: 1px solid lightblue;
+}
