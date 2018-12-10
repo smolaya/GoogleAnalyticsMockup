@@ -403,8 +403,7 @@ body{
 
 .pieChart {
   display: flex;
-  height: 10em;
-  justify-content: center;
+  justify-content:flex-start;
   position: absolute;
 }
 
