@@ -9,6 +9,6 @@
 * Open the project on your text editor 
 * Open your chrome browser and open the project on your browser (copy the link at the bottom left of your text editor) or cmd + o and select the file. 
 
-Future Additions
+## Future Additions
 * add media queries to make the site responsive 
 * Make the mockup more interactive by adding links and using JavaScript/React.js
